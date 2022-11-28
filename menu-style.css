@@ -1,0 +1,84 @@
+html {
+    scroll-behavior: smooth;
+}
+h1{color: rgb(249, 238, 238);
+}
+
+body{
+    
+background-color: #000000;
+margin: 0px;
+}
+
+header{
+background-color: rgb(17, 126, 70);
+padding: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn-abrir{
+    color: #f0f5fb;
+    font-size: 20px;
+}
+nav{
+    height: 100%;
+    width: 0%;
+    background-color: rgb(17, 126, 70);
+     top:0%;
+    left: 0%;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.3s;
+    position: fixed;
+}
+main{
+    padding: 10px;
+    transition:margin-left,0.5s ; 
+}
+nav a{
+    color: #f8f8f8;
+    font-size: 20px;
+    display: block;
+    padding: 12px 10px 12px 32px;
+    
+}
+
+nav a:hover{
+    color: rgb(209, 218, 214);
+    background-color:rgb(50, 2, 121); ;
+}
+
+.search-box{
+    border-radius: 40px;
+    background: rgb(50, 2, 121);
+    height: 40px;
+    padding: 10px;
+    transform: translate(-50,-50);
+    left: 75%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+
+}
+.search-txt{
+  border: none; 
+  background:none;
+  outline:none;
+  padding:0;
+  color:#f0f5fb;
+  font-size: 16px;
+  line-height: 40px;
+  
+}
+.container{
+    display: inline-flex;  
+}
+p{
+    margin-left: 20px;
+    color: #fffbfb;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

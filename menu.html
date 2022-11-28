@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu-style.css">
+    <link rel="shortcut icon" href="/orange_food_fruit_icon_182571.svg" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <a href="#" class="btn-abrir" onclick="abrirmenu()">&#9776;abrir</a>
+    <div class="search-box">
+      <label for="search"></label>
+      <input type="search" class="search-txt" placeholder="pesquisar"> 
+      <a href="#" class="search-btn">
+        <img src="lupa.svg.svg" alt="lupa"height="35" width="25">
+      </a> 
+    </div>
+    <div class="content">
+
+    </div>
+  </header>
+<nav id="menu">
+  <a href="#" onclick="fecharmenu()">&times; fechar</a>
+  <a href="#">bem avaliados</a>
+  <a href="profile-page.html">usuario</a>
+  <a href="#">sobre</a>
+</nav>
+<main id="conteudo">
+  <div class="container">
+    <a href="/pages/filme1.html"><img src="pictures/unnamed (6).jpg" alt="banner"></a>
+    <p>Adelaide e Gabe levam a família para passar <br>
+       um fim de semana na praia e descansar.Eles <br>
+       começam a aproveitar o ensolarado local,<br> 
+       mas a chegada de um grupo misterioso <br>
+       muda tudo e a família se torna refém de seres <br>
+       com aparências iguais às suas.
+    </p>
+  </div>
+    <p><a href="/pages/filme1.html">US (2019)</a></p>
+
+    <div class="container">
+    <img src="pictures/unnamed.jpg" alt="">
+    <p>Chihiro e seus pais estão se mudando para uma<br>cidade diferente. A caminho da nova casa, o pai<br> pegar um atalho. Eles se deparam com uma mesa<br>repleta de comida, embora ninguém esteja por perto.<br>Chihiro sente o perigo, mas seus pais começam a comer.<br>Quando anoitece, eles se transformam em porcos.<br>Agora, apenas Chihiro pode salvá-los.</p>
+    </div>
+    <p><a href="/pages/filme2.html">A Viagem De Chihiro</a></p>
+
+    <div class="container">
+    <img src="pictures/unnamed (1).jpg" alt="">
+    <p>Após Thanos eliminar metade das criaturas vivas,<br>os Vingadores têm de lidar com a perda de amigos<br>e entes queridos. Com Tony Stark vagando perdido<br>no espaço sem água e comida, Steve Rogers e Natasha<br>Romanov lideram a resistência contra o titã louco.</p>
+    </div>
+    <p><a href="pagina04.html"> Adevengers Andgame</a></p>
+
+    <div class="container">
+    <img src="pictures/unnamed (2).jpg" alt="">
+    <p>Harry Potter é um garoto órfão que vive infeliz com seus<br>tios, os Dursleys. Ele recebe uma carta contendo um convite<br>para ingressar em Hogwarts, uma famosa escola especializada<br>em formar jovens bruxos. Inicialmente, Harry é impedido de ler<br>a carta por seu tio, mas logo recebe a visita de Hagrid, o guarda-caça<br>de Hogwarts, que chega para levá-lo até a escola. Harry adentra<br>um mundo mágico que jamais imaginara, vivendo diversas aventuras<br>com seus novos amigos, Rony Weasley e Hermione Granger.</p>
+    </div>
+    <p><a href="pagina05.html">Harry Potter</a></p>
+
+    <div class="container">
+    <img src="pictures/unnamed (3).jpg" alt="">
+    <p>Um autor de romances criminais encontra uma caixa<br>com filmagens antigas de crimes horripilantes, que<br>parecem ter sido cometidos por um assassino em série.<br>Ao investigar, ele e sua família se tornam alvos<br>de uma entidade sobrenatural maligna.</p>
+    </div>
+    <p><a href="pagina06.html">A Entidade</a></p>
+
+    <div class="container">
+    <img src="pictures/unnamed (4).jpg" alt="">
+    <p>O casamento de Lady Di e o príncipe Charles esfriou há<br>muito tempo. Embora os rumores de casos e divórcio<br>sejam abundantes, a paz reina nas festividades de Natal<br>na propriedade de Sandringham. Há comida, bebida, tiro<br>e caça. Diana conhece o jogo, mas este ano as coisas<br>serão muito diferentes. Spencer conta a história do que<br>aconteceu durante aqueles dias decisivos.</p>
+    </div>
+    <p><a href="pagina07.html">Spencer</a></p>
+
+    <div class="container">
+    <img src="pictures/unnamed (5).jpg" alt="">
+    <p>Conheça a história de T'Challa, príncipe do reino de<br>Wakanda, que perde o seu pai e viaja para os Estados<br>Unidos, onde tem contato com os Vingadores. Entre<br>as suas habilidades estão a velocidade, inteligência<br>e os sentidos apurados.</p>
+    </div>
+    <p><a href="pagina08.html">Pantera Negra</a></p>
+  </main>
+  <script>
+    function abrirmenu() {
+      document.getElementById("menu").style.width="250px";
+      document.getElementById("conteudo").style.marginLeft ="250px";
+    }
+  function fecharmenu() {
+document.getElementById("menu").style.width="0px";
+document.getElementById("conteudo").style.marginLeft = "0px";
+  }
+  </script>
+
+</body>
+</html>
