@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body,html {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #201b2c;
+    display: grid;
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Info area*/
+
+.page-princ {
+    width: 98vw;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+}
+.page-princ-info {
+    font-size: 15px;
+    background-color: gray;
+    height: 52vw; 
+    border-radius: 12px;
+}
+.page-princ-info .banner {
+    border: 2px solid white;
+}
+#rating1 {
+    background-color: red;
+    border: 6px solid red;
+    border-radius: 5px;
+    color: white;
+}
+#rating2 {
+    background-color: green;
+    border: 6px solid green;
+    border-radius: 5px;
+    color: white; 
+}
+.page-princ-info-content {
+    margin: 20px;
+    cursor: default;
+}
+.right-content {
+    width: 15vw;
+}
+#YTrailer h1 {
+    color: white;
+}
+
+/*Casting area*/
+
+.cast-title {
+    margin: 32px;
+    color: #00ff88;
+}
+.cast-area {
+    margin: 0px;
+    display: flex;
+}
+.cast-photo-left img {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+}
+
+.cast-left-name h2 {
+    margin-left: 17px;
+    text-decoration: none;
+}
+.cast-left-name b {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+    padding-right: 400px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    transition: .2s ease-in-out;
+}
+a:hover {
+    color: white;
+}
+.cast-area-right {
+    margin-left: 300px;
+}
+.cast-photo-right img {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+}
+
+/* Comment section */
+
+.avaliation {
+    margin: 32px;
+    color: #00ff88;
+}
+.comment-section {
+    position: relative;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: #000;
+    width: 400px;
+    background: #111;
+    padding: 20px 30px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.comment-section .post {
+    display: none;
+}
+.comment-section .text {
+    font-size: 25px;
+    color: #666;
+    font-weight: 500;
+}
+.comment-section .edit {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    cursor: pointer;
+}
+.comment-section .edit:hover {
+    text-decoration: underline;
+}
+.comment-section .star-widget input {
+    display: none;
+}
+.star-widget label {
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2 ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+    color: #fd4;
+}
+input:checked ~ label {
+    color: #fd4;
+}
+input#rate-5:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+#rate-1:checked ~ form header:before {
+    content: "Uma perda de tempo";
+}
+#rate-2:checked ~ form header:before {
+    content: "Achei ok";
+}
+#rate-3:checked ~ form header:before {
+    content: "Bom";
+}
+#rate-4:checked ~ form header:before {
+    content: "Muito bom";
+}
+#rate-5:checked ~ form header:before {
+    content: "EU AMEI!!!";
+}
+.comment-section form {
+    display: none;
+}
+input:checked ~ form {
+    display: block;
+}
+form header {
+    width: 100%;
+    font-size: 25px;
+    color: #fe7;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+form .textarea {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #eee;
+    border: 1px solid #333;
+    background: #222;
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+}
+form .btn {
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+form .btn button {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    background: #222;
+    color: #999;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form .btn button:hover {
+    background: #1b1b1b;
+}
