@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    
+}
+
+/*navigation bar*/
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 200px;
+    background: #4ad5f7;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav,
+.nav .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav .title {
+    font-family: 'Agbalumo', 'sans-serif';
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.nav .nav-links {
+    font-family: 'Poppins', 'sans-serif';
+    column-gap: 20px;
+    list-style: none;
+}
+
+.nav .nav-links a {
+    transition: all 0.2s linear;
+}
+
+.nav .search-icon {
+    color: #00f494;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav form .search-box {
+    position: absolute;
+    right: 250px;
+    height: 45px;
+    max-width: 555px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: red;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.search-box input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 0 15px 0 45px;
+}
+
+.nav.openSearch .search-box {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.nav.openSearch .nav-links a {
+    opacity: 0;
+    pointer-events: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-box .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    left: 15px;
+    color: #4a98f7;
+    transform: translateY(-50%);
+}
+

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body,html {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #201b2c;
+    display: grid;
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Info area*/
+
+.page-princ {
+    width: 98vw;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+}
+.page-princ-info {
+    font-size: 15px;
+    background-color: gray;
+    height: 52vw; 
+    border-radius: 12px;
+}
+.page-princ-info .banner {
+    border: 2px solid white;
+}
+#rating1 {
+    background-color: red;
+    border: 6px solid red;
+    border-radius: 5px;
+    color: white;
+}
+#rating2 {
+    background-color: green;
+    border: 6px solid green;
+    border-radius: 5px;
+    color: white; 
+}
+.page-princ-info-content {
+    margin: 20px;
+    cursor: default;
+}
+.right-content {
+    width: 15vw;
+}
+#YTrailer h1 {
+    color: white;
+}
+
+/*Casting area*/
+
+.cast-title {
+    margin: 32px;
+    color: #00ff88;
+}
+.cast-area {
+    margin: 0px;
+    display: flex;
+}
+.cast-photo-left img {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+}
+
+.cast-left-name h2 {
+    margin-left: 17px;
+    text-decoration: none;
+}
+.cast-left-name b {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+    padding-right: 400px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    transition: .2s ease-in-out;
+}
+a:hover {
+    color: white;
+}
+.cast-area-right {
+    margin-left: 300px;
+}
+.cast-photo-right img {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+}
+
+/* Comment section */
+
+#form-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.star {
+    font-size: 25px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.star:hover {
+    color: gold;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#comments-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.avaliacao {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 5px;
+    resize: vertical;
+}
