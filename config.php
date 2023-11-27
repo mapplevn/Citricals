@@ -1,9 +1,9 @@
 <?php
 
-$dbHost = 'localhost';
+$dbHost = 'viaduct.proxy.rlwy.net';
 $dbUsername = 'root';
-$dbPassword = '';
-$dbName = 'citricalsdb';
+$dbPassword = '53H6F5aebdFaeaA4Dh62Aac5d65c4aae';
+$dbName = 'railway';
 
 
 $conn = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
